@@ -5,6 +5,4 @@ module.exports = {
   main,
 };
 
-function main() {
-  console.log('ola mundo');
-}
+function main() {}
