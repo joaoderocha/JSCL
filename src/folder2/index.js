@@ -1,13 +1,9 @@
 'use strict';
 
-const msg = 'olaaa';
-
 module.exports = {
-  msg,
+  main,
 };
 
 function main() {
   console.log('ola mundo');
 }
-
-main();
