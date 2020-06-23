@@ -4,6 +4,9 @@
   "description": "The JavaScript Cá&Lá (or just JSCL) is a JavaScript middleware that integrates high performance computing (HPC) to a unique API.",
   "main": "src/index.js",
   "scripts": {
+    "debug": "DEBUG=server* npm start",
+    "client": "netcat localhost 9000",
+    "start": "node src/index.js",
     "test": "tap -b test/*.test.js test/**/*.test.js --coverage --100 --jobs=1",
     "lint": "prettier --write '{src,test}/**/*.js' && eslint --fix '{src,test}/**/*.js'",
     "lint:ci": "prettier --list-different '{src,test}/**/*.js' && eslint '{src,test}/**/*.js'"
@@ -23,7 +26,9 @@
     "url": "https://github.com/joaoderocha/JSCL/issues"
   },
   "homepage": "https://github.com/joaoderocha/JSCL#readme",
-  "dependencies": {},
+  "dependencies": {
+    "debug": "4.1.1"
+  },
   "devDependencies": {
     "eslint": "6.8.0",
     "eslint-plugin-promise": "4.2.1",
