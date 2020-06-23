@@ -1,9 +1,5 @@
 'use strict';
 
-const folder2 = require('./folder2');
-const msg = 'olaaa';
+const { startServer } = require('./jsclServer');
 
-module.exports = {
-  msg,
-  folder2,
-};
+startServer();
